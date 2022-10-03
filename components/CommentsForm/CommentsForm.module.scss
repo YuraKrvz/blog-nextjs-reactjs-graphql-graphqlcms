@@ -1,0 +1,96 @@
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  h3 {
+    text-align: center;
+  }
+}
+.form {
+  display: flex;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+.comment {
+  margin: 20px 20px 20px 0;
+  padding: 10px;
+  width: 400px;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  resize: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  @media screen and (max-width: 920px) {
+    width: 100%;
+  }
+}
+.name,
+.email {
+  margin: 19px 0 0 0;
+  padding: 10px;
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: none;
+  overflow: auto;
+  outline: none;
+  @media screen and (max-width: 920px) {
+    max-width: 180px;
+  }
+  @media screen and (max-width: 500px) {
+    max-width: 80px;
+  }
+}
+.checkbox {
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  .submit__inner {
+    display: flex;
+    align-items: center;
+  }
+  label {
+    max-width: 200px;
+    font-size: 12px;
+  }
+  button {
+    width: 300px;
+    //max-width: 300px;
+    //min-width: 300px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.4s ease-in-out;
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+    @media screen and (max-width: 500px) {
+      margin-left: 5px;
+      width: 100%;
+      //min-width: 100px
+    }
+  }
+}
+.error {
+  text-align: center;
+  color: red;
+}
+textarea.comment,
+input.email,
+input.name {
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

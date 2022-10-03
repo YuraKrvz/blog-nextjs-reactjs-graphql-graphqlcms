@@ -1,0 +1,32 @@
+.footer {
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  color: var(--color-yellow);
+  background-color: var(--color-black);
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    text-align: center;
+    span {
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+  @media screen and (max-width: 730px) {
+    font-size: 12px;
+    max-height: 300px;
+    p {
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+}
